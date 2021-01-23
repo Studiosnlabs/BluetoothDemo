@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         BA.disable();
         if (BA.isEnabled()){
 
-            Toast.makeText(getApplicationContext(), "Bluetooth could not be turned off", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Bluetooth could not be shutdown", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(getApplicationContext(), "Bluetooth turned off", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Bluetooth shutdown", Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (BA.isEnabled()){
 
-            Toast.makeText(getApplicationContext(), "Bluetooth is on", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Bluetooth is up", Toast.LENGTH_SHORT).show();
             
         } else {
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
             if(BA.isEnabled()){
 
-                Toast.makeText(getApplicationContext(), "Bluetooth now on", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Bluetooth now running", Toast.LENGTH_SHORT).show();
             }
         }
     }
