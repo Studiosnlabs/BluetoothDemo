@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         BA.disable();
         if (BA.isEnabled()){
 
+            String user ="Kerl";
+
             Toast.makeText(getApplicationContext(), "Bluetooth could not be shutdown", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(getApplicationContext(), "Bluetooth shutdown", Toast.LENGTH_SHORT).show();
