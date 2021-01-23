@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonOff"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginBottom="511dp"
+        android:text="Bluetooth Off"
+        android:onClick="turnBluetoothOff"/>
+
+    <Button
+        android:id="@+id/findDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="443dp"
+        android:text="Find Discoverable Devices"
+        android:onClick="findDevices"/>
+
+    <Button
+        android:id="@+id/pairedDevices"
+        android:layout_width="217dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/findDevices"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="173dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="380dp"
+        android:text="View Paired Devices"
+        android:onClick="viewDevices"/>
+
+    <ListView
+        android:id="@+id/pairedDevicesList"
+        android:layout_width="333dp"
+        android:layout_height="349dp"
+        android:layout_below="@id/pairedDevices"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="231dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="23dp" />
+</RelativeLayout>
